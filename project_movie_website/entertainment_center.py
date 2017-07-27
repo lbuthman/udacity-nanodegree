@@ -1,17 +1,53 @@
 import fresh_tomatoes
 import media
+import cli_ui
+import tmdbsimple as tmdb
+from clint.textui import puts, indent
 
-bottle_rocket = media.Movie("Bottle Rocket",
-                            "I have never heard a synopsis that does this movie justice.\n"
-                            "The plot isn't the point, it is the feeling and the characters that bring it life.",
-                            "https://upload.wikimedia.org/wikipedia/en/a/ae/Bottle-Rocket.jpg",
-                            "https://www.youtube.com/watch?v=RY3iBfth1Ro")
+tmdb.API_KEY = "6b3be69c94536097c86c359ff38a0552"
+base_poster_url = "https://image.tmdb.org/t/p/w500"
+base_trailer_url = "https://www.youtube.com/watch?v="
+movies = []
 
-meet_joe_black = media.Movie("Meet Joe Black",
-                             "Death takes a vacation and falls in love.",
-                             "https://upload.wikimedia.org/wikipedia/en/f/f5/Meet_Joe_Black-_1998.jpg",
-                             "https://www.youtube.com/watch?v=_zIOjl93WrU")
 
-movies = [bottle_rocket, meet_joe_black]
+def find_movie(name):
+    search = tmdb.Search()
+    response = search.movie(query=name)
+    return response['results'][0]
+
+
+def get_movie_trailer(id):
+    movie_details = tmdb.Movies(id)
+    response = movie_details.videos()
+    return base_trailer_url + response['results'][0]['key']
+
+
+def add_movie_to_movies(title, info, poster_url, trailer_url):
+    movies.append(media.Movie(title, info, poster_url, trailer_url))
+
+# init command line welcome screen
+cli_ui.print_welcome_screen()
+input_number = 1
+
+while True:
+
+    movie_name = cli_ui.get_movie(input_number)
+    if movie_name == 'q' or movie_name == 'quit':
+        break
+
+    found_movie = find_movie(movie_name)
+    movie_id = found_movie['id']
+    movie_title = found_movie['title']
+    movie_info = found_movie['overview']
+    movie_poster = base_poster_url + found_movie['poster_path']
+
+    # to get movie trailer, you must search by specific movie id
+    movie_trailer = get_movie_trailer(movie_id)
+
+    add_movie_to_movies(movie_title, movie_info, movie_poster, movie_trailer)
+
+    input_number += 1
+    cli_ui.print_success_message()
+
 fresh_tomatoes.open_movies_page(movies)
-
+cli_ui.print_exit_message()
