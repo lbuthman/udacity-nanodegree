@@ -3,7 +3,7 @@
 from clint.textui import puts, indent, prompt
 
 
-def welcome_screen():
+def print_welcome_screen():
     puts("==========================================================================================================\n"
          "==========================================================================================================\n"
          " @@   ##     ##   ####  ###   ##  ######  #######   @^@   #######   ###    ###   ##  #######  ######   @@\n"
@@ -30,3 +30,21 @@ def get_movie(input_number):
     query_string = "Enter your #" + str(input_number) + " favorite movie: "
     with indent(4, quote=' >'):
         return prompt.query(query_string)
+
+
+def print_success_message():
+    with indent(4, quote=" >>>"):
+        puts("Movie successfully added!")
+
+
+def print_exit_message():
+    puts("==========================================================================================================\n"
+         "==========================================================================================================\n"
+         " @@                                                                                                     @@\n"
+         " @@       Great job!! You have successfully created your movie website page. Check it out in            @@\n"
+         " @@       the app directory, looking for a file called 'double_click_me.html'. That's your new          @@\n"
+         " @@       favorite movie website! Bye for now and remember, with great power comes great ...            @@\n"
+         " @@       research-ability I think. (eh, I forget, watch Spiderman and find out.)                       @@\n"
+         " @@                                                                                                     @@\n"
+         "==========================================================================================================\n"
+         "==========================================================================================================\n")
