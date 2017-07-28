@@ -10,8 +10,8 @@
 This project uses some external wrappers (fancy word for python applications), and you
 will needs these bad boys to get started. They are easy to download and the links can
 be found below.<br/>
-&nbsp;* <a href="https://pypi.python.org/pypi/tmdbsimple">tmdbsimple</a>
-&nbsp;* <a href="https://pypi.python.org/pypi/clint/">clint</a>
+&nbsp;&nbsp;&nbsp;* <a href="https://pypi.python.org/pypi/tmdbsimple">tmdbsimple</a><br/>
+&nbsp;&nbsp;&nbsp;* <a href="https://pypi.python.org/pypi/clint/">clint</a>
 
 <h3>Make it your own!</h3>
 
