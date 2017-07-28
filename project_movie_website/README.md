@@ -1,10 +1,17 @@
 <h1>Movie Faves</h1>
  <p>Hello and welcome to the infamous Movie Faves website generator, courtesy of Udacity
- and me, Luke Buthman! Creating spiffy movie websites is easy, just enter your favorite
- movies below.</p>
- <p>When you are done and ready to make your website, simply type q or quit. Your html
- website will then be kneaded, tossed, and baked in no time. Have fun! Impress your
- friends! Rule the world!</p>
+ and me, Luke Buthman!</p>
+
+<h3>Getting Started</h3>
+ <p>Creating spiffy movie websites is easy. To get started, open the python file called
+ entertainment_center.py. If you aren't sure how to open a Python file, 
+ <a href="https://stackoverflow.com/questions/1522564/how-do-i-run-a-python-program">learn how here.</a></p>
+ 
+ <p>After the program is opened, it will ask you to input your favorite movies. Simply
+ type in each movie title, careful to be specific and use proper spelling (or you might
+ find a new favorite movie by accident hehe). When you are done and ready to make your 
+ website, simply type q or quit. Your html website will then be kneaded, tossed, baked, 
+ and ready in no time. Have fun! Impress your friends! Rule the world!</p>
 
 <h3>Required dependencies</h3>
 This project uses some external wrappers (fancy word for python applications), and you
