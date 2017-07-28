@@ -3,7 +3,8 @@
  and me, Luke Buthman!</p>
 
 <h3>Getting Started</h3>
- <p>Creating spiffy movie websites is easy. To get started, open the python file called
+ <p>Creating spiffy movie websites is easy. To get started, check out the dependencies
+ section below, install those libraries and then open the python file called
  entertainment_center.py. If you aren't sure how to open a Python file, 
  <a href="https://stackoverflow.com/questions/1522564/how-do-i-run-a-python-program">learn how here.</a></p>
  
@@ -15,10 +16,10 @@
 
 <h3>Required dependencies</h3>
 This project uses some external wrappers (fancy word for python applications), and you
-will needs these bad boys to get started. They are easy to download and the links can
+will need these bad boys to get started. They are easy to download and the links can
 be found below.<br/><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* <a href="https://pypi.python.org/pypi/tmdbsimple">tmdbsimple</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* <a href="https://pypi.python.org/pypi/clint/">clint</a>
+&nbsp;* <a href="https://pypi.python.org/pypi/tmdbsimple">tmdbsimple</a><br/>
+&nbsp;* <a href="https://pypi.python.org/pypi/clint/">clint</a>
 
 <h3>Make it your own!</h3>
 
