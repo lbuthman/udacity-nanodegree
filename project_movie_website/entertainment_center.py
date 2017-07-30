@@ -2,7 +2,6 @@ import fresh_tomatoes
 import media
 import cli_ui
 import tmdbsimple as tmdb
-from clint.textui import puts, indent
 
 tmdb.API_KEY = "6b3be69c94536097c86c359ff38a0552"
 base_poster_url = "https://image.tmdb.org/t/p/w500"
@@ -15,15 +14,25 @@ def find_movie(name):
     response = search.movie(query=name)
     return response['results'][0]
 
+""" Returns found movie data, see tmbd api for more information
+Searches api based on string movie name
+"""
+
 
 def get_movie_trailer(id):
     movie_details = tmdb.Movies(id)
     response = movie_details.videos()
     return base_trailer_url + response['results'][0]['key']
 
+""" Returns complete URL for movie trailer
+Searches api based on numeric id
+"""
+
 
 def add_movie_to_movies(title, info, poster_url, trailer_url):
     movies.append(media.Movie(title, info, poster_url, trailer_url))
+
+"""add selected movie to array"""
 
 # init command line welcome screen
 cli_ui.print_welcome_screen()
