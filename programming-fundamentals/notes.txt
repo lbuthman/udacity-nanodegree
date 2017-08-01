@@ -1,0 +1,15 @@
+Display Properties
+    - display: block; -> take up as much width as possible
+    - display: inline; -> take up only what is needed
+
+Box Model
+    - HTML's space on the screen
+    - 1) Content 2) Padding 3) Border 4) Margin
+    - the first three are "on the inside", while margin is on the outside
+    - box-sizing -> includes width, padding and border
+    - box-sizing: border-box;
+
+Default Size
+    - User-Agent Styles
+    - some elements have certain default, other have different ones
+    - div and block elements are wide as possible but use as little height as possible
