@@ -13,3 +13,121 @@ Default Size
     - User-Agent Styles
     - some elements have certain default, other have different ones
     - div and block elements are wide as possible but use as little height as possible
+
+Div Soup
+    - not using Semantic Elements, only using divs
+    - doesn't describe the purpose of the html
+
+Position
+    - position: static; -> default
+    - relative, absolute, and fixed are variations on the normal flow
+
+Inline Block
+    - any element with an inline block takes on the layout behaviors of an inline element
+    with the sizing behaviors of a block element
+
+Anonymous Box
+    - white space can be added as an additional element between elements
+    - this comes when html elements are separated with whitespace, new lines or tabs
+
+Relative Flow (position)
+    - allows you to shift position of elements after they have been laid out in the
+    normal flow
+    - an element can't shift on one axis in both directions so it makes sense to only
+    define top or bottom and/or left or right
+    - the top, bottom, left, right define where that element will align based on the
+    browser coordinate plane
+
+Three Dimensional Browser Layout
+    - in addition to the x and y position, elements are layered as well, producing a 3rd
+    dimension
+    - this is the z-index, z-point
+
+Absolute Flow (position)
+    - rendered before normal flow
+    - position is relative to the parent
+    - rarely used, prefer transform: translate;
+
+Fix Flow (position)
+    - rendered before normal flow
+    - position is relative to the viewport
+    - since based on viewport, position doesn't move when scrolling (think headers and
+    side bar navigation)
+    - fixed headers = sticky headers
+    - combines with top: 0; left: 0; we get an element fixed to an upper left position
+
+Text-Layout
+    - composed of text-top, baseline and text-bottom (but actually more complex than this)
+    - baseline of text will match the baseline of the parent
+
+Text-Vertical Align
+    1) vertical-align and text-top, bottom, and middle are in relation to the parent
+    element
+    2) vertical-align: top and bottom will align to the line
+
+CSs System Breakdown
+    1) what are the display properties of the elements and how do they affect layout?
+    2) In what order do the steps of layout happen?
+    3) How do the children effect each other?
+    4) How do the containers effect their children? How do the children effect their
+    containers?
+    5) How are the elements currently aligned? In what direction are they aligned? What
+    property / properties could affect the alignment?
+
+Inline vs Floats Layout
+    - in-line layouts carry the gotchas seen in the sibling and relative layout problem.
+    At the end of the section, the video mentions that floats may be preferred to avoid
+    this complexity.
+
+Float Children
+    - do not follow the height of the parent, i.e. they are not involved in the box-size
+    calculation of normal flow parents
+
+Force Elements in the Normal Flow to Respect the Boundaries of Floats
+    1) Block Formatting Contexts -> elements with a block formatting context may not
+    overlap floats, ex. overflow: auto;
+    2) Clearing -> clear: left, right, or both; make the top of the element below a left
+    float, right float or below any floated element that appears earlier in the document
+    3) Pseudo-element -> can give content and display: block (etc) styling
+        -- check out clearfix and review this
+
+Overflow
+    - overflow, overflow-x, overflow-y -> determine what happens to content if its box
+    model is larger than its parent's block model
+    - default is visible -> content is always rendered and may extend outside its parent
+
+Viewport
+    - <meta name="viewport" content="width=device-width, initial-scale=1">
+
+Tips
+    - favor relative to absolute position to help with responsive design
+    - create a catch-all -> img, embed, object, video { max-width: 100%; }
+
+Tap Target Size
+    - 48px by 48px -> use min-width and min-height, add padding: 1.5em;
+    - at least 40px of room between two targets
+
+Start Small
+    - first, design for mobile
+    - then move up
+    - helps prioritize content
+
+Media Queries
+    - media queries like handheld, projected, or embossed never gained traction
+    1) <link ref="stylesheet" media="screen and (min-width: 500px)" href="over500.css">
+    2) @media screen and (min-width: 500px) and (max-width: 700px) { body {
+        background-color: green; }}
+
+Picking Breakpoints
+    - find break points, using the content as a guide
+    - resize from small to large, looking for when and where the content needs a new
+    representation
+    - once found, add the breakpoint and new stylesheet if using link
+
+Grid Fluid Pattern
+    - see Intro to HTML and CSS course
+
+Flexbox
+    - add display: flex; to a parent container
+    - add various preferences like flex-wrap: wrap;
+    - order attribute, set order of elements that respond to different screen sizes
