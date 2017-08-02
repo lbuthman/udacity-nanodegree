@@ -1,0 +1,10 @@
+- trailing white space configured to show and auto-delete in PyCharm
+
+- do not close self-closing tags <br> not <br />
+
+- avoid entity references like &mdash;
+    -> exception < and & since they have special meaning
+
+- omit type attributes like type="text/css"
+
+- use double quotes when quoting attribute values, class=""
