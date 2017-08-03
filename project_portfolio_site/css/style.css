@@ -11,8 +11,26 @@
 
 body {
     background-color: #F4FFFD;
+    font-family: 'Lato', sans-serif;
 }
 
-#githubIcon {
+h1 {
+    font-size: 64px;
+    font-weight: 700;
+}
+
+#profile-thumbnail {
+    margin-top: 18px;
+}
+
+#header-text {
+    margin-top: 28px;
+}
+
+.icon {
     color: #212121;
+}
+
+#linkedin-icon {
+    padding-left: .5em;
 }
