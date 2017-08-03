@@ -14,6 +14,8 @@
     <script src="https://use.fontawesome.com/a4ac4f61f2.js"></script>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet">
 
     <!-- Bootstrap and JQuery JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
@@ -22,49 +24,107 @@
             crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <header>
-                <div class="col-xs-12 col-sm-4 col-md-3">
-                    <a href="#profilePic" role="button" data-toggle="modal">
-                    <img src="img/lbuthman-close-v2.png" alt="Luke Buthman's Profile Pic" class="img-responsive
+<div class="container-fluid">
+    <div class="row">
+        <header>
+            <div class="col-xs-12 col-sm-4 col-md-3">
+                <a href="#profile-pic" role="button" data-toggle="modal">
+                    <img id="profile-thumbnail" src="img/lbuthman-close-v2.png" alt="Luke Buthman's Profile Pic"
+                         class="img-responsive
                     img-rounded center-block"></a>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-7 text-center">
-                    <h1>The Honest Coder</h1>
-                    <h2>Luke Buthman</h2>
-                </div>
-                <div class="col-xs-12 col-sm-2 col-md-2 text-center">
-                    <h3>lbuthman [at] gmail</h3>
-                    <a href="https://github.com/lbuthman">
-                        <i id="githubIcon" class="fa fa-github fa-4x" aria-hidden="true"></i>
-                    </a>
-                </div>
-            </header>
-        </div>
+            </div>
+            <div id="header-text" class="col-xs-12 col-sm-6 col-md-7 text-center">
+                <!-- TODO - add logo, re-evaluate position -->
+                <h1>The Honest Coder</h1>
+                <h2>Luke Buthman</h2>
+            </div>
+            <div class="col-xs-12 col-sm-2 col-md-2 text-center">
+                <h3>lbuthman [at] gmail</h3>
+                <a href="https://github.com/lbuthman" target="_blank">
+                    <i class="fa fa-github fa-3x icon" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/luke-buthman-1b5101a3/" target="_blank">
+                    <i id="linkedin-icon" class="fa fa-linkedin-square fa-3x icon" aria-hidden="true"></i>
+                </a>
+            </div>
+        </header>
     </div>
 
+    <hr>
 
-    <!-- Modal -->
-    <div class="modal fade" id="profilePic" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog" role="document">
+    <div class="row">
+        <div class="col-xs-1"></div>
+        <blockquote class="col-xs-10 col-md-8 text-center">
+            <p>"Ugly programs are like ugly suspension bridges: they're much more liable to collapse than
+                pretty ones, because the way humans (especially engineer-humans) perceive beauty is intimately related
+                to our ability to process and understand complexity." -
+                <a href="http://www.linuxjournal.com/article/3882">Eric S. Raymond</a>
+            </p>
+        </blockquote>
+        <div class="col-xs-1"></div>
+    </div>
+
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <a href="https://codepen.io/lbuthman/full/GmrrwM" target="_blank">
+                    <img src="img/calculator.png" alt="Rad Calculator">
+                </a>
+                <div class="carousel-caption">
+                    <p>Caption Text</p>
+                </div>
+            </div>
+            <div class="item">
+                <a href="https://codepen.io/lbuthman/full/LjRyVm" target="_blank">
+                    <img src="img/pom-crusher.png" alt="Pom Crusher 9000">
+                </a>
+                <div class="carousel-caption">
+                    <p>Caption Text</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="profile-pic" tabindex="-1" role="dialog" aria-labelledby="Expanded Profile Picture">
+    <div class="modal-dialog" role="document">
         <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title text-center" id="profilePicModalLabel">Brooklyn Bridge, Sunny Skies</h4>
-          </div>
-          <div class="modal-body">
-              <img src="img/lbuthman-full.png" alt="Luke Buthman's Profile Pic" class="img-responsive center-block">
-              <p>This picture comes from a nice stroll with my girlfriend at the time. We were walking
-              across the Brooklyn Bridge when I noticed the sky writing. For some reason, some nameless
-              soul decided to write "Nerd" in the sky. Obviously I found it super cool and wish I knew
-              what the motivation was for that endeavor. So if you know something, say something :)</p>
-          </div>
-          <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title text-center" id="profile-pic-modal-label">Brooklyn Bridge, Sunny Skies</h4>
+            </div>
+            <div class="modal-body">
+                <img src="img/lbuthman-full.png" alt="Luke Buthman's Profile Pic" class="img-responsive center-block">
+                <p>This picture comes from a nice stroll with my girlfriend at the time. We were walking
+                    across the Brooklyn Bridge when I noticed the sky writing. For some reason, some nameless
+                    soul decided to write "Nerd" in the sky. Obviously I found it super cool and wish I knew
+                    what the motivation was for that endeavor. So if you know something, say something :)</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
         </div>
-      </div>
     </div>
+</div>
 </body>
 </html>
