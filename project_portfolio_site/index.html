@@ -25,44 +25,42 @@
 </head>
 <body>
 <div class="container">
-    <div class="row">
-        <header>
-            <div class="col-xs-12 col-sm-4 col-md-3">
-                <a href="#profile-pic" role="button" data-toggle="modal">
-                    <img id="profile-thumbnail" src="img/lbuthman-close-v2.png" alt="Luke Buthman's Profile Pic"
-                         class="img-responsive img-rounded center-block"></a>
-            </div>
-            <div id="header-text" class="col-xs-12 col-sm-6 col-md-7 text-center">
-                <!-- TODO - add logo, re-evaluate position -->
-                <h1>The Honest Coder</h1>
-                <h2>Luke Buthman</h2>
-            </div>
-            <div class="col-xs-12 col-sm-2 col-md-2 text-center">
-                <h3>lbuthman [at] gmail</h3>
-                <a href="https://github.com/lbuthman" target="_blank">
-                    <i class="fa fa-github fa-3x icon" aria-hidden="true"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/luke-buthman-1b5101a3/" target="_blank">
-                    <i id="linkedin-icon" class="fa fa-linkedin-square fa-3x icon" aria-hidden="true"></i>
-                </a>
-            </div>
-        </header>
-    </div>
+
+    <header class="row">
+        <div class="col-xs-12 col-sm-4 col-md-3">
+            <a href="#profile-pic" role="button" data-toggle="modal">
+                <img id="profile-thumbnail" src="img/lbuthman-close-v2.png" alt="Luke Buthman's Profile Pic"
+                     class="img-responsive img-rounded center-block">
+            </a>
+        </div>
+        <div id="header-text" class="col-xs-12 col-sm-8 col-md-7 text-center">
+            <!-- TODO - add logo, re-evaluate position -->
+            <h1>The Honest Coder</h1>
+            <h2>Luke Buthman</h2>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-sm-offset-2 col-md-2 col-md-offset-0 text-center">
+            <h3>lbuthman [at] gmail</h3>
+            <a href="https://github.com/lbuthman" target="_blank">
+                <i class="fa fa-github fa-3x icon" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/luke-buthman-1b5101a3/" target="_blank">
+                <i id="linkedin-icon" class="fa fa-linkedin-square fa-3x icon" aria-hidden="true"></i>
+            </a>
+        </div>
+    </header>
 
     <hr>
 
-    <div class="row">
-        <blockquote class="col-xs-10 col-md-8 text-center col-xs-offset-1 col-md-offset-2">
-            <p>"Ugly programs are like ugly suspension bridges: they're much more liable to collapse than
-                pretty ones, because the way humans (especially engineer-humans) perceive beauty is intimately related
-                to our ability to process and understand complexity." -
-                <a href="http://www.linuxjournal.com/article/3882">Eric S. Raymond</a>
-            </p>
-        </blockquote>
-        <div class="col-xs-1"></div>
-    </div>
+    <blockquote class="row">
+        <p class="col-xs-10 col-md-8 text-center col-xs-offset-1 col-md-offset-2">
+            "Ugly programs are like ugly suspension bridges: they're much more liable to collapse than
+            pretty ones, because the way humans (especially engineer-humans) perceive beauty is intimately related
+            to our ability to process and understand complexity." -
+            <a href="http://www.linuxjournal.com/article/3882">Eric S. Raymond</a>
+        </p>
+    </blockquote>
 
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <div id="carousel-example-generic" class="row carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -100,6 +98,12 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
+
+    <footer>
+        <div class="row">
+
+        </div>
+    </footer>
 </div>
 
 
