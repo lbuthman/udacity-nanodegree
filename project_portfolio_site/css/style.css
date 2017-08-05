@@ -10,14 +10,16 @@
 */
 
 body {
-    background-color: #F4FFFD;
     font-family: 'Lato', sans-serif;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100%;
 }
 
 .jumbotron {
     background-image: url("../img/background-and-icons-v3.png");
     background-size: cover;
-    height: 100%;
+    min-height: 100vh;
     margin-left: -20%;
     margin-right: -20%;
 }
@@ -50,21 +52,21 @@ h2 {
     color: white !important;
 }
 
-#profile-thumbnail {
-    margin-top: 80px;
+#portfolio {
+    background-color: #FFF1D0;
+    padding-bottom: 7%;
+    min-height: 100vh;
 }
 
-#portfolio-carousel {
-    max-width: 500px !important;
-    max-height: 500px !important;
-}
-
-.carousel-control.left, .carousel-control.right {
-    background-image: none;
+.portfolio-image {
+    -webkit-box-shadow: 5px 30px 59px -8px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 5px 30px 59px -8px rgba(0, 0, 0, 0.7);
+    box-shadow: 5px 30px 59px -8px rgba(0, 0, 0, 0.7);
+    margin-bottom: 1.5em;
 }
 
 footer {
-    margin-bottom: 40px;
+    height: 100vh;
 }
 
 .icon {
