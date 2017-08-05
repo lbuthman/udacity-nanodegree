@@ -26,25 +26,32 @@ header {
     height: 100vh;
 }
 
+#profile-thumbnail {
+    position: relative;
+    -webkit-box-shadow: 6px 39px 59px -8px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 6px 39px 59px -8px rgba(0, 0, 0, 0.7);
+    box-shadow: -6px 39px 59px -8px rgba(0, 0, 0, 0.7);
+}
+
 h1 {
     font-size: 64px;
     font-weight: 700;
+    text-shadow: -3px 5px 19px black;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: 400;
+    text-shadow: -2px 4px 9px black;
+}
+
+.header-text {
+    margin-top: 40px;
+    color: white !important;
 }
 
 #profile-thumbnail {
-    margin-top: 18px;
-}
-
-#header-text {
-    margin-top: 28px;
-}
-
-.icon {
-    color: #212121;
-}
-
-#linkedin-icon {
-    padding-left: .5em;
+    margin-top: 80px;
 }
 
 #portfolio-carousel {
@@ -58,4 +65,12 @@ h1 {
 
 footer {
     margin-bottom: 40px;
+}
+
+.icon {
+    color: #212121;
+}
+
+#linkedin-icon {
+    padding-left: .5em;
 }
