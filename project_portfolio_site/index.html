@@ -24,11 +24,11 @@
             crossorigin="anonymous"></script>
 </head>
 <body>
-<div class="container">
+<div class="container-fluid">
 
     <header>
         <div class="jumbotron">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <section class="col-xs-10 col-xs-offset-1 text-center">
                         <h1 class="header-text">The Honest Coder</h1>
@@ -45,9 +45,9 @@
         </div>
     </header>
 
-    <hr>
+    <section id="portfolio" class="row">
+        <h2 class="col-xs-10 col-xs-offset-1 text-center">Projects</h2>
 
-    <section class="row">
         <blockquote class="col-xs-10 col-md-8 text-center col-xs-offset-1 col-md-offset-2">
             <p>
                 "Ugly programs are like ugly suspension bridges: they're much more liable to collapse than
@@ -56,28 +56,23 @@
                 <a href="http://www.linuxjournal.com/article/3882">Eric S. Raymond</a>
             </p>
         </blockquote>
-    </section>
 
-    <hr>
-
-    <section class="row">
-        <h2 class="col-xs-10 col-xs-offset-1 text-center">Projects</h2>
-        <div class="col-xs-12">
+        <div id="calc-img" class="col-xs-12 col-sm-4">
             <a href="https://codepen.io/lbuthman/full/GmrrwM" target="_blank">
-                <img class="img-rounded center-block" src="img/calculator.gif" alt="Rad Calculator"
-                height="400" width="300">
+                <img class="img-responsive img-rounded center-block portfolio-image" src="img/calculator-v2.gif"
+                     alt="Rad Calculator">
             </a>
         </div>
-        <div class="col-xs-12">
-            <a href="https://codepen.io/lbuthman/full/GmrrwM" target="_blank">
-                <img class="img-responsive img-rounded center-block" src="img/pom-crusher.gif" alt="Pomodoro Timer"
-                height="400" width="300">
+        <div id="pom-img" class="col-xs-12 col-sm-4">
+            <a href="https://codepen.io/lbuthman/full/eWRbYj" target="_blank">
+                <img class="img-responsive img-rounded center-block portfolio-image" src="img/pom-crusher.gif"
+                     alt="Pomodoro Timer">
             </a>
         </div>
-        <div class="col-xs-12">
-            <img class="img-responsive img-rounded center-block"
+        <div id="placeholder-img" class="col-xs-12 col-sm-4">
+            <img class="img-responsive img-rounded center-block portfolio-image"
                  src="http://yyngo.com/wp-content/uploads/2015/01/coming-soon.gif"
-                 alt="Coming Soon!" height="400" width="300">
+                 alt="Coming Soon!" width="450">
         </div>
     </section>
 
