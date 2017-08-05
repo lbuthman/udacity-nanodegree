@@ -30,16 +30,16 @@
         <div class="jumbotron">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-10 col-xs-offset-1 text-center">
+                    <section class="col-xs-10 col-xs-offset-1 text-center">
                         <h1 class="header-text">The Honest Coder</h1>
                         <h2 class="header-text">Luke Buthman</h2>
-                    </div>
-                    <div class="col-xs-12">
+                    </section>
+                    <section class="col-xs-10 col-xs-offset-1">
                         <a href="#profile-pic" role="button" data-toggle="modal">
                             <img id="profile-thumbnail" src="img/lbuthman-close.png" alt="Luke Buthman's Profile Pic"
                                  class="img-responsive img-rounded center-block" height="696px" width="345px">
                         </a>
-                    </div>
+                    </section>
                 </div>
             </div>
         </div>
@@ -47,59 +47,39 @@
 
     <hr>
 
-    <blockquote class="row">
-        <p class="col-xs-10 col-md-8 text-center col-xs-offset-1 col-md-offset-2">
-            "Ugly programs are like ugly suspension bridges: they're much more liable to collapse than
-            pretty ones, because the way humans (especially engineer-humans) perceive beauty is intimately related
-            to our ability to process and understand complexity." -
-            <a href="http://www.linuxjournal.com/article/3882">Eric S. Raymond</a>
-        </p>
-    </blockquote>
+    <section class="row">
+        <blockquote class="col-xs-10 col-md-8 text-center col-xs-offset-1 col-md-offset-2">
+            <p>
+                "Ugly programs are like ugly suspension bridges: they're much more liable to collapse than
+                pretty ones, because the way humans (especially engineer-humans) perceive beauty is intimately related
+                to our ability to process and understand complexity." -
+                <a href="http://www.linuxjournal.com/article/3882">Eric S. Raymond</a>
+            </p>
+        </blockquote>
+    </section>
 
     <hr>
 
-    <div id="portfolio-carousel" class="row carousel slide center-block" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <a href="https://codepen.io/lbuthman/full/GmrrwM" target="_blank">
-                    <img class="img-responsive center-block" src="img/calculator.png" alt="Rad Calculator">
-                </a>
-                <!--<div class="carousel-caption">-->
-                    <!--<p>Rad Calculator project</p>-->
-                <!--</div>-->
-            </div>
-            <div class="item">
-                <a href="https://codepen.io/lbuthman/full/LjRyVm" target="_blank">
-                    <img class="img-responsive center-block" src="img/pom-crusher.png" alt="Pom Crusher 9000">
-                </a>
-                <!--<div class="carousel-caption">
-                    <p>Pomodoro project</p>
-                </div>-->
-            </div>
-            <div class="item">
-                <img class="img-responsive center-block"
-                     src="http://yyngo.com/wp-content/uploads/2015/01/coming-soon.gif" alt="Coming Soon!">
-            </div>
+    <section class="row">
+        <h2 class="col-xs-10 col-xs-offset-1 text-center">Projects</h2>
+        <div class="col-xs-12">
+            <a href="https://codepen.io/lbuthman/full/GmrrwM" target="_blank">
+                <img class="img-rounded center-block" src="img/calculator.gif" alt="Rad Calculator"
+                height="400" width="300">
+            </a>
         </div>
-
-        <!-- Controls -->
-        <a class="left carousel-control" href="#portfolio-carousel" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#portfolio-carousel" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
+        <div class="col-xs-12">
+            <a href="https://codepen.io/lbuthman/full/GmrrwM" target="_blank">
+                <img class="img-responsive img-rounded center-block" src="img/pom-crusher.gif" alt="Pomodoro Timer"
+                height="400" width="300">
+            </a>
+        </div>
+        <div class="col-xs-12">
+            <img class="img-responsive img-rounded center-block"
+                 src="http://yyngo.com/wp-content/uploads/2015/01/coming-soon.gif"
+                 alt="Coming Soon!" height="400" width="300">
+        </div>
+    </section>
 
     <footer class="row">
         <div class="col-xs-12 text-center">
