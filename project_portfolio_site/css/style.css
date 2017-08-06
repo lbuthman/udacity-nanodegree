@@ -16,6 +16,27 @@ body {
     height: 100%;
 }
 
+header {
+    height: 100vh;
+}
+
+#header-title {
+    font-size: 64px;
+    font-weight: 700;
+    text-shadow: -3px 5px 19px black;
+}
+
+#my-name {
+    font-size: 50px;
+    font-weight: 400;
+    text-shadow: -2px 4px 9px black;
+}
+
+.header-text {
+    margin-top: .5em;
+    color: white !important;
+}
+
 .jumbotron {
     background-image: url("../img/background-and-icons-v3.png");
     background-size: cover;
@@ -24,32 +45,22 @@ body {
     margin-right: -20%;
 }
 
-header {
-    height: 100vh;
-}
-
 #profile-thumbnail {
     position: relative;
     -webkit-box-shadow: 6px 39px 59px -8px rgba(0, 0, 0, 0.7);
     -moz-box-shadow: 6px 39px 59px -8px rgba(0, 0, 0, 0.7);
     box-shadow: -6px 39px 59px -8px rgba(0, 0, 0, 0.7);
+    margin-top: 3em;
 }
 
-h1 {
-    font-size: 64px;
-    font-weight: 700;
-    text-shadow: -3px 5px 19px black;
+#modal-profile-pic {
+    max-height: 400px !important;
+    max-width: 100%;
 }
 
-h2 {
-    font-size: 50px;
-    font-weight: 400;
-    text-shadow: -2px 4px 9px black;
-}
-
-.header-text {
-    margin-top: 40px;
-    color: white !important;
+#modal-text {
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 #portfolio {
