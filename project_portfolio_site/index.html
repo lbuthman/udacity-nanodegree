@@ -24,98 +24,98 @@
             crossorigin="anonymous"></script>
 </head>
 <body>
-<div class="container-fluid">
-
-    <header>
-        <div class="jumbotron">
-            <div class="container-fluid">
-                <div class="row">
-                    <section class="col-xs-10 col-xs-offset-1 text-center">
-                        <h1 class="header-text">The Honest Coder</h1>
-                        <h2 class="header-text">Luke Buthman</h2>
-                    </section>
-                    <section class="col-xs-10 col-xs-offset-1">
-                        <a href="#profile-pic" role="button" data-toggle="modal">
-                            <img id="profile-thumbnail" src="img/lbuthman-close.png" alt="Luke Buthman's Profile Pic"
-                                 class="img-responsive img-rounded center-block" height="696px" width="345px">
-                        </a>
-                    </section>
+    <!-- Modal -->
+    <div class="modal fade" id="profile-pic" tabindex="-1" role="dialog" aria-labelledby="Expanded Profile Picture">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h3 class="modal-title text-center" id="profile-pic-modal-label">Brooklyn Bridge, Nerdy Skies</h3>
+                </div>
+                <div class="modal-body">
+                    <img src="img/lbuthman-full.png" alt="Luke Buthman's Profile Pic"
+                         id="modal-profile-pic" class="img-responsive center-block">
+                    <hr>
+                    <h4 id="modal-text">During a nice stroll on the Brooklyn Bridge, some nameless soul decided
+                        to write "Nerd" in the sky. Obviously, I found it super cool and still ponder on the
+                        motivation for that endeavor. So if you know something, say something :)</h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
-    </header>
-
-    <section id="portfolio" class="row">
-        <h2 class="col-xs-10 col-xs-offset-1 text-center">Projects</h2>
-
-        <blockquote class="col-xs-10 col-md-8 text-center col-xs-offset-1 col-md-offset-2">
-            <p>
-                "Ugly programs are like ugly suspension bridges: they're much more liable to collapse than
-                pretty ones, because the way humans (especially engineer-humans) perceive beauty is intimately related
-                to our ability to process and understand complexity." -
-                <a href="http://www.linuxjournal.com/article/3882">Eric S. Raymond</a>
-            </p>
-        </blockquote>
-
-        <div id="calc-img" class="col-xs-12 col-sm-4">
-            <a href="https://codepen.io/lbuthman/full/GmrrwM" target="_blank">
-                <img class="img-responsive img-rounded center-block portfolio-image" src="img/calculator-v2.gif"
-                     alt="Rad Calculator">
-            </a>
-        </div>
-        <div id="pom-img" class="col-xs-12 col-sm-4">
-            <a href="https://codepen.io/lbuthman/full/eWRbYj" target="_blank">
-                <img class="img-responsive img-rounded center-block portfolio-image" src="img/pom-crusher.gif"
-                     alt="Pomodoro Timer">
-            </a>
-        </div>
-        <div id="placeholder-img" class="col-xs-12 col-sm-4">
-            <img class="img-responsive img-rounded center-block portfolio-image"
-                 src="http://yyngo.com/wp-content/uploads/2015/01/coming-soon.gif"
-                 alt="Coming Soon!" width="450">
-        </div>
-    </section>
-
-    <footer class="row">
-        <div class="col-xs-12 text-center">
-            <h2>Contact</h2>
-        </div>
-        <div class="col-xs-10 col-xs-1-offset">
-            <h3>lbuthman [at] gmail</h3>
-            <a href="https://github.com/lbuthman" target="_blank">
-                <i class="fa fa-github fa-3x icon" aria-hidden="true"></i>
-                <span>https://github.com/lbuthman</span>
-            </a>
-            <a href="https://www.linkedin.com/in/luke-buthman-1b5101a3/" target="_blank">
-                <i id="linkedin-icon" class="fa fa-linkedin-square fa-3x icon" aria-hidden="true"></i>
-                <span>https://www.linkedin.com/lbuthman</span>
-            </a>
-        </div>
-    </footer>
-</div>
-
-
-<!-- Modal -->
-<div class="modal fade" id="profile-pic" tabindex="-1" role="dialog" aria-labelledby="Expanded Profile Picture">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title text-center" id="profile-pic-modal-label">Brooklyn Bridge, Sunny Skies</h4>
-            </div>
-            <div class="modal-body">
-                <img src="img/lbuthman-full.png" alt="Luke Buthman's Profile Pic" class="img-responsive center-block">
-                <p>This picture comes from a nice stroll with my girlfriend at the time. We were walking
-                    across the Brooklyn Bridge when I noticed the sky writing. For some reason, some nameless
-                    soul decided to write "Nerd" in the sky. Obviously I found it super cool and wish I knew
-                    what the motivation was for that endeavor. So if you know something, say something :)</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
     </div>
-</div>
+
+    <div class="container">
+
+        <header>
+            <div class="jumbotron">
+                <div class="container-fluid">
+                    <div class="row">
+                        <section class="col-xs-10 col-xs-offset-1 text-center">
+                            <h1 id="header-title" class="header-text">The Honest Coder</h1>
+                            <h2 id="my-name" class="header-text">Luke Buthman</h2>
+                        </section>
+                        <section class="col-xs-10 col-xs-offset-1">
+                            <a href="#profile-pic" role="button" data-toggle="modal">
+                                <img id="profile-thumbnail" src="img/lbuthman-close.png" alt="Luke Buthman's Profile Pic"
+                                     class="img-responsive img-rounded center-block" height="696px" width="345px">
+                            </a>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="portfolio" class="row">
+            <h2 class="col-xs-10 col-xs-offset-1 text-center">Projects</h2>
+
+            <blockquote class="col-xs-10 col-md-8 text-center col-xs-offset-1 col-md-offset-2">
+                <p>
+                    "Ugly programs are like ugly suspension bridges: they're much more liable to collapse than
+                    pretty ones, because the way humans (especially engineer-humans) perceive beauty is intimately related
+                    to our ability to process and understand complexity." -
+                    <a href="http://www.linuxjournal.com/article/3882">Eric S. Raymond</a>
+                </p>
+            </blockquote>
+
+            <div id="calc-img" class="col-xs-12 col-sm-4">
+                <a href="https://codepen.io/lbuthman/full/GmrrwM" target="_blank">
+                    <img class="img-responsive img-rounded center-block portfolio-image" src="img/calculator-v2.gif"
+                         alt="Rad Calculator">
+                </a>
+            </div>
+            <div id="pom-img" class="col-xs-12 col-sm-4">
+                <a href="https://codepen.io/lbuthman/full/eWRbYj" target="_blank">
+                    <img class="img-responsive img-rounded center-block portfolio-image" src="img/pom-crusher.gif"
+                         alt="Pomodoro Timer">
+                </a>
+            </div>
+            <div id="placeholder-img" class="col-xs-12 col-sm-4">
+                <img class="img-responsive img-rounded center-block portfolio-image"
+                     src="http://yyngo.com/wp-content/uploads/2015/01/coming-soon.gif"
+                     alt="Coming Soon!" width="450">
+            </div>
+        </section>
+
+        <footer class="row">
+            <div class="col-xs-12 text-center">
+                <h2>Contact</h2>
+            </div>
+            <div class="col-xs-10 col-xs-1-offset">
+                <h3>lbuthman [at] gmail</h3>
+                <a href="https://github.com/lbuthman" target="_blank">
+                    <i class="fa fa-github fa-3x icon" aria-hidden="true"></i>
+                    <span>https://github.com/lbuthman</span>
+                </a>
+                <a href="https://www.linkedin.com/in/luke-buthman-1b5101a3/" target="_blank">
+                    <i id="linkedin-icon" class="fa fa-linkedin-square fa-3x icon" aria-hidden="true"></i>
+                    <span>https://www.linkedin.com/lbuthman</span>
+                </a>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
 
