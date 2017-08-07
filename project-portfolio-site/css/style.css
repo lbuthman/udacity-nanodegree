@@ -1,25 +1,25 @@
 /*Color Palette
-#FFF1D0 - Papaya Whip
-#F8ED08 - Aureolin
-#446CCF - Han Blue
-#AEB4A9 - Silver Chalice
-#E0C1B3 - Desert Sand
+#fff1d0 - Papaya Whip
+#f8ed08 - Aureolin
+#446ccf - Han Blue
+#aeb4a9 - Silver Chalice
+#e0c1b3 - Desert Sand
 */
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     overflow-y: scroll;
     overflow-x: hidden;
     height: 100%;
 }
 
 .container {
-    min-width: 100vw;
+    max-width: 100%;
 }
 
 header {
     height: 100vh;
-    min-width: 100vw;
+    max-height: 100vh;
 }
 
 #header-title {
@@ -34,17 +34,23 @@ header {
     text-shadow: -2px 4px 9px black;
 }
 
-.header-text {
-    margin-top: .5em;
-    color: white !important;
+h1.header-text, h2.header-text {
+    margin-top: 0.5em;
+    color: white;
 }
 
 .jumbotron {
-    background-image: url("../img/background-and-icons-v3.png");
-    background-size: cover;
+    background-image: url(../img/background-and-icons-v3.png);
+    background-size: contain;
     min-height: 100vh;
-    margin-left: -4%;
-    margin-right: -4%;
+    min-width: 100vw;
+    /*margin-left: -4%;*/
+    /*margin-right: -4%;*/
+}
+
+#profile-container {
+    max-height: 696px;
+    max-width: 345px;
 }
 
 #profile-thumbnail {
@@ -66,7 +72,7 @@ header {
 }
 
 #portfolio {
-    background-color: #FFF1D0;
+    background-color: #fff1d0;
     padding-bottom: 7%;
     min-height: 100vh;
 }
@@ -84,11 +90,11 @@ header {
 
 footer {
     height: 100vh;
-    background-color: #AEB4A9;
+    background-color: #aeb4a9;
 }
 
 #contact-info {
-    background-color: #E0C1B3;
+    background-color: #e0c1b3;
     margin-top: 3%;
     -webkit-box-shadow: 5px 30px 59px -8px rgba(0, 0, 0, 0.7);
     -moz-box-shadow: 5px 30px 59px -8px rgba(0, 0, 0, 0.7);
