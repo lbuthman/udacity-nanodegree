@@ -13,13 +13,16 @@ body {
     height: 100%;
 }
 
-.container {
-    max-width: 100%;
+.jumbotron {
+    background-image: url(../img/background-and-icons-v3.png);
+    background-size: cover;
+    max-height: 100vh;
+    min-width: 100vw;
 }
 
-header {
-    height: 100vh;
-    max-height: 100vh;
+h1.header-text, h2.header-text {
+    margin-top: 0.5em;
+    color: white;
 }
 
 #header-title {
@@ -32,20 +35,6 @@ header {
     font-size: 50px;
     font-weight: 400;
     text-shadow: -2px 4px 9px black;
-}
-
-h1.header-text, h2.header-text {
-    margin-top: 0.5em;
-    color: white;
-}
-
-.jumbotron {
-    background-image: url(../img/background-and-icons-v3.png);
-    background-size: contain;
-    min-height: 100vh;
-    min-width: 100vw;
-    /*margin-left: -4%;*/
-    /*margin-right: -4%;*/
 }
 
 #profile-container {
