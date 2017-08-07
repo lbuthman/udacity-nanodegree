@@ -97,14 +97,29 @@ footer {
 
 #contact-info {
     background-color: #E0C1B3;
-    margin-top: 10%;
-    padding-bottom: 5%;
+    margin-top: 3%;
+    -webkit-box-shadow: 5px 30px 59px -8px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 5px 30px 59px -8px rgba(0, 0, 0, 0.7);
+    box-shadow: 5px 30px 59px -8px rgba(0, 0, 0, 0.7);
+}
+
+.contact-heading {
+    margin: 1em;
+}
+
+.contact-text {
+    font-size: 20px;
+    margin: 2em;
+}
+
+a  {
+    color: inherit;
+}
+
+a:link {
+    text-decoration: none;
 }
 
 .icon {
     color: #212121;
-}
-
-#linkedin-icon {
-    padding-left: .5em;
 }
