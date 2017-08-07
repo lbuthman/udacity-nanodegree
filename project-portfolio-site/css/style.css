@@ -10,7 +10,10 @@ body {
     font-family: "Lato", sans-serif;
     overflow-y: scroll;
     overflow-x: hidden;
-    height: 100%;
+}
+
+header.jumbotron {
+    margin: 0;
 }
 
 .jumbotron {
@@ -60,10 +63,13 @@ h1.header-text, h2.header-text {
     margin-right: 10%;
 }
 
+.container {
+    width: 100vw;
+}
+
 #portfolio {
     background-color: #fff1d0;
     padding-bottom: 7%;
-    min-height: 100vh;
 }
 
 .portfolio-image {
