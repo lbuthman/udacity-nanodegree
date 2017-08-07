@@ -1,11 +1,16 @@
 /*Color Palette
+#FFF1D0 - Papaya Whip
+#F8ED08 - Aureolin
+#446CCF - Han Blue
+#AEB4A9 - Silver Chalice
+#E0C1B3 - Desert Sand
+
 #F55D3E - Orange Soda
 #F7CB15 - Jonquil
 #777DA7 - Shadow Blue
 #FFFFFF - White
 #FFFFF3 - Ivory
 #76BED0 - Dark Sky Blue
-
 #F4FFFD - Mint Cream
 */
 
@@ -16,8 +21,13 @@ body {
     height: 100%;
 }
 
+.container {
+    min-width: 100vw;
+}
+
 header {
     height: 100vh;
+    min-width: 100vw;
 }
 
 #header-title {
@@ -41,8 +51,8 @@ header {
     background-image: url("../img/background-and-icons-v3.png");
     background-size: cover;
     min-height: 100vh;
-    margin-left: -20%;
-    margin-right: -20%;
+    margin-left: -4%;
+    margin-right: -4%;
 }
 
 #profile-thumbnail {
@@ -76,8 +86,19 @@ header {
     margin-bottom: 1.5em;
 }
 
+.section-header {
+    font-size: 50px;
+}
+
 footer {
     height: 100vh;
+    background-color: #AEB4A9;
+}
+
+#contact-info {
+    background-color: #E0C1B3;
+    margin-top: 10%;
+    padding-bottom: 5%;
 }
 
 .icon {
