@@ -12,53 +12,52 @@ body {
     overflow-x: hidden;
 }
 
-header.jumbotron {
-    margin: 0;
-}
-
+/*Header*/
 .jumbotron {
     background-image: url(../img/background-and-icons-v3.png);
     background-size: cover;
     height: 100vh;
     min-width: 100vw;
+    margin: 0;
 }
 
-h1.header-text, h2.header-text {
+h1.header-text,
+h2.header-text {
     margin-top: 0.5em;
     color: white;
 }
 
-#header-title {
+.header-title {
     font-size: 64px;
     font-weight: 700;
     text-shadow: -3px 5px 19px black;
 }
 
-#my-name {
+.my-name {
     font-size: 50px;
     font-weight: 400;
     text-shadow: -2px 4px 9px black;
 }
 
-#profile-container {
+.profile-container {
     max-height: 696px;
     max-width: 345px;
 }
 
-#profile-thumbnail {
+.profile-thumbnail {
     position: relative;
     -webkit-box-shadow: 6px 39px 59px -8px rgba(0, 0, 0, 0.7);
     -moz-box-shadow: 6px 39px 59px -8px rgba(0, 0, 0, 0.7);
     box-shadow: -6px 39px 59px -8px rgba(0, 0, 0, 0.7);
-    margin-top: 20em;
+    margin-top: 3%;
 }
 
-#modal-profile-pic {
+.modal-profile-pic {
     max-height: 400px !important;
     max-width: 100%;
 }
 
-#modal-text {
+.modal-text {
     margin-left: 10%;
     margin-right: 10%;
 }
@@ -67,7 +66,8 @@ h1.header-text, h2.header-text {
     width: 100vw;
 }
 
-#portfolio {
+/*Content*/
+.portfolio {
     background-color: #fff1d0;
     padding-bottom: 7%;
 }
@@ -83,12 +83,13 @@ h1.header-text, h2.header-text {
     font-size: 50px;
 }
 
+/*Footer*/
 footer {
     height: 100vh;
     background-color: #aeb4a9;
 }
 
-#contact-info {
+.contact-info {
     background-color: #e0c1b3;
     margin-top: 3%;
     -webkit-box-shadow: 5px 30px 59px -8px rgba(0, 0, 0, 0.7);
