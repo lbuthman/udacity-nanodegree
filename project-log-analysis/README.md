@@ -6,6 +6,16 @@ would like to answer and press Enter.
 3. The result output will display once the query completes! Easy :)
 4. Press 0 and Enter to quit at any time.
 
+
+## Purpose of Application
+
+The Log Analysis project aims to simplify the process to answer the following
+questions from a news database.
+
+1. What are the most popular three articles of all time?
+2. Who are the most popular article authors of all time?
+3. On which days did more than 1% of requests lead to errors?
+
 ## Advanced Usage
 
 Note: This log analysis tools relies on a few Views. You can recreate, retool,
