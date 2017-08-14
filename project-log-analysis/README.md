@@ -1,4 +1,4 @@
-##Quickstart
+## Quickstart
 
 1. Start the application from the command line `python3 log_analysis.py`
 2. The application will print a menu. Enter the number of the question you
@@ -6,7 +6,7 @@ would like to answer and press Enter.
 3. The result output will display once the query completes! Easy :)
 4. Press 0 and Enter to quit at any time.
 
-##Advanced Usage
+## Advanced Usage
 
 Note: This log analysis tools relies on a few Views. You can recreate, retool,
 or refactor these views easily. Find the views created below.
