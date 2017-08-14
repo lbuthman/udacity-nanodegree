@@ -2,6 +2,7 @@ import psycopg2
 
 DBNAME = 'news'
 
+
 def get_top_three_articles():
     """"Return the three most popular articles of all time."""
     db = psycopg2.connect(database=DBNAME)
