@@ -10,6 +10,7 @@ MENU = """
 \t0 - quit\n
 \tEnter your choice here: """
 
+
 def print_articles(articles):
     for article in articles:
         print("\tArticle Title: {} -- Total Views: {}".format(
@@ -25,7 +26,7 @@ def print_authors(authors):
 def print_days(days):
     for day in days:
         print("\tDay: {}-{}-{} -- Error Responses: {}%".format(
-        int(day[0]), int(day[1]), int(day[2]), day[3]))
+            int(day[0]), int(day[1]), int(day[2]), day[3]))
 
 
 while True:
@@ -33,12 +34,12 @@ while True:
 
     try:
         query = int(query)
-    except:
-        print() # error message handled in else below
+    except ValueError:
+        print()  # error message handled in else below
 
     if query == 0:
         print("\tHave a good day!\n")
-        break;
+        break
 
     elif query == 1:
         print("\tYou selected 1. Hang tight, looking now ...\n")
